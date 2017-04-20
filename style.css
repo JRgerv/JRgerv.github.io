@@ -1,14 +1,81 @@
-.slicknav_menu {
-	display:none;
+/* Header */
+body{
+	z-index: auto;
+}
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	/*z-index: -1;*/
+	height: 100vh;
 }
 
-@media screen and (max-width: 40em) {
-	/* #menu is the original menu */
-	.js #menu {
-		display:none;
-	}
+#demo-canvas{
+	z-index: -1;
+}
 
-	.js .slicknav_menu {
-		display:block;
+a{
+	z-index: 100;
+}
+
+#large-header {
+	background-image: url('./bgmono.jpg');
+  /*z-index: -1;*/
+}
+
+.flip {
+	 background-image: url('./bgmono-flip.jpg') !important;
+}
+.zoom {
+	 background-image: url('./bgmono-zoom.jpg') !important;
+}
+.jesus {
+  position:fixed;
+  top:0;
+  left: 15%;
+}
+.branding {
+  color: #434343;
+  font-weight: 400;
+}
+.main-title {
+	margin: 3% auto;
+	padding: 0;
+	color: black;
+	top: 15%;
+	left: 50%;
+
+}
+.valign {
+	display: inline-flex;
+  vertical-align: middle;
+}
+.overlay {
+	display: block;
+	opacity: 0.5;
+	position: absolute;
+	width:inherit;
+	height: inherit;
+
+}
+.overlay :hover {
+	display: block;
+}
+.demo-1 .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
 	}
 }
