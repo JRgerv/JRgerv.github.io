@@ -17,8 +17,15 @@ body{
 	z-index: -1;
 }
 
-a{
-	z-index: 100;
+.arrow-left {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.arrow-right {
+	position:absolute;
+	top: 5%;
+	right: 5%;
 }
 
 #large-header {
