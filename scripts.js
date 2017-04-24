@@ -183,6 +183,3 @@
     }
 
 })(); //background interact effect
-$('.resume').click(function(){
-  window.location.href('https://docs.google.com/document/d/1dBFKgAVql3iDDdwc2f4sViv7ExxCBAZo-Man-bI8Oo8/edit')
-});
