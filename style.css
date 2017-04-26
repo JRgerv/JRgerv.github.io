@@ -6,7 +6,7 @@ body{
 	position: relative;
 	width: 100%;
 	background: #333;
-	overflow: hidden;
+	overflow: scroll;
 	background-size: cover;
 	background-position: center center;
 	/*z-index: -1;*/
@@ -30,7 +30,7 @@ body{
 
 #large-header {
 	background-image: url('./bgmono.jpg');
-  /*z-index: -1;*/
+
 }
 
 .flip {
@@ -40,9 +40,9 @@ body{
 	 background-image: url('./bgmono-zoom.jpg') !important;
 }
 .jesus {
-  position:fixed;
-  top:0;
-  left: 15%;
+  position: relative;
+  top:-100vh;
+
 	padding: 2em;
 }
 .branding {
@@ -61,17 +61,8 @@ body{
 	display: inline-flex;
   vertical-align: middle;
 }
-.overlay {
-	display: block;
-	opacity: 0.5;
-	position: absolute;
-	width:inherit;
-	height: inherit;
 
-}
-.overlay :hover {
-	display: block;
-}
+
 .demo-1 .main-title {
 	text-transform: uppercase;
 	font-size: 4.2em;
