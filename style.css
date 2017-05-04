@@ -1,6 +1,8 @@
 /* Header */
 body{
 	z-index: auto;
+	height: 100vh;
+	width: 100%;
 }
 .large-header {
 	position: relative;
@@ -9,8 +11,11 @@ body{
 	overflow: scroll;
 	background-size: cover;
 	background-position: center center;
-	/*z-index: -1;*/
-	height: 100vh;
+
+}
+
+.flex {
+	justify-content: space-around !important;
 }
 
 #demo-canvas{
@@ -20,12 +25,12 @@ body{
 .arrow-left {
 	position: absolute;
 	top: 5%;
-	left: 5%;
+	left: 4%;
 }
 .arrow-right {
-	position:absolute;
+	position: absolute;
 	top: 5%;
-	right: 5%;
+	right: 4%;
 }
 
 #large-header {
