@@ -1,4 +1,3 @@
-/* Header */
 body{
 	z-index: auto;
 	height: 100vh;
@@ -11,7 +10,6 @@ body{
 	overflow: scroll;
 	background-size: cover;
 	background-position: center center;
-
 }
 
 .flex {
@@ -19,18 +17,22 @@ body{
 }
 
 #demo-canvas{
-	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
 }
 
 .arrow-left {
-	position: absolute;
-	top: 5%;
-	left: 4%;
+	position: relative;
+	top: 1%;
+	left: 1%;
 }
+
 .arrow-right {
-	position: absolute;
-	top: 5%;
-	right: 4%;
+	position: relative;
+	top: 1%;
+	right: 1%;
 }
 
 #large-header {
@@ -41,33 +43,40 @@ body{
 .flip {
 	 background-image: url('./bgmono-flip.jpg') !important;
 }
+
 .zoom {
 	 background-image: url('./bgmono-zoom.jpg') !important;
 }
+
 .jesus {
   position: relative;
-  top:-100vh;
-
-	padding: 2em;
 }
+
 .branding {
   color: #434343;
   font-weight: 400;
 }
+
 .main-title {
 	margin: 3% auto;
 	padding: 0;
 	color: black;
 	top: 15%;
 	left: 50%;
-
 }
+
 .valign {
 	display: inline-flex;
   vertical-align: middle;
-
 }
 
+.fade {
+	background-color: rgba(38,166,154,.5);
+}
+
+.edit {
+	border-left: .5em solid #26a69a !important;
+}
 
 .demo-1 .main-title {
 	text-transform: uppercase;
@@ -78,9 +87,24 @@ body{
 .main-title .thin {
 	font-weight: 200;
 }
+.w3-opacity {
+	width: 20%;
+	height:auto;
+}
+.shift-right {
+	position: relative;
+	left: 50%;
+}
 
 @media only screen and (max-width : 768px) {
 	.demo-1 .main-title {
 		font-size: 3em;
+	}
+	.shift-right {
+		position: relative;
+		left: 0%;
+	}
+	.jesus {
+		width: 100%;
 	}
 }
