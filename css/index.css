@@ -1,0 +1,15 @@
+@media only screen and (max-width : 768px) {
+  .main-title{
+    font-size: 2rem !important;
+  }
+  a {
+    display: block !important;
+    text-align: right !important;
+  }
+  .branding {
+    position: absolute !important;
+    right: 44%;
+    bottom: 21%;
+
+  }
+}
