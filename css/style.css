@@ -1,6 +1,6 @@
-body{
+html, body{
 	z-index: auto;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
 .large-header {
@@ -14,6 +14,7 @@ body{
 
 .flex {
 	justify-content: space-around !important;
+	display: inline;
 }
 
 #demo-canvas{
@@ -25,27 +26,27 @@ body{
 
 .arrow-left {
 	position: relative;
-	top: 1%;
+	top: 2%;
 	left: 1%;
 }
 
 .arrow-right {
 	position: relative;
-	top: 1%;
+	top: 2%;
 	right: 1%;
 }
 
 #large-header {
-	background-image: url('./bgmono.jpg');
+	background-image: url('../css/img/bgmono.jpg');
 
 }
 
 .flip {
-	 background-image: url('./bgmono-flip.jpg') !important;
+	 background-image: url('../css/img/bgmono-flip.jpg') !important;
 }
 
 .zoom {
-	 background-image: url('./bgmono-zoom.jpg') !important;
+	 background-image: url('../css/img/bgmono-zoom.jpg') !important;
 }
 
 .jesus {
@@ -95,16 +96,27 @@ body{
 	position: relative;
 	left: 50%;
 }
-
+.logo {
+	text-align: right;
+}
 @media only screen and (max-width : 768px) {
 	.demo-1 .main-title {
 		font-size: 3em;
 	}
 	.shift-right {
 		position: relative;
-		left: 0%;
+		left: 10%;
 	}
 	.jesus {
 		width: 100%;
+	}
+	.branding {
+		text-align: center;
+	}
+	.large-header {
+		overflow: auto;
+	}
+	.container .row {
+		margin: 0 auto;
 	}
 }

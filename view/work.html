@@ -5,11 +5,12 @@
     <title>/PROJECTS/</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-      <a href="https://jrgerv.github.io/Portfolio/" class="arrow-left btn-floating btn-large waves-effect waves-light grey darken-3"><strong><</strong></a>
     <div id="large-header" class="large-header flip">
+      <a href="https://jrgerv.github.io/Portfolio/" class="arrow-left btn-floating btn-large waves-effect waves-light grey darken-3"><strong><</strong></a>
       <canvas id="demo-canvas"></canvas>
       <div class="container jesus">
         <h1 class="main-title"> <span class="thin">< P O R T F O L I O > </span></h1>
@@ -17,7 +18,7 @@
           <div class="col s12 m11  card-panel fade">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="soundtrak.png" onmouseover="this.src='soundtrakdemo.gif'" onmouseout="this.src='soundtrak.png'">
+                <img class="activator responsive-img" src="../css/img/preview/soundtrak.png" onmouseover="this.src='../css/img/preview/soundtrakdemo.gif'" onmouseout="this.src='../css/img/preview/soundtrak.png'">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><strong>Soundtrak</strong><i class="material-icons right">more_vert</i></span>
@@ -29,7 +30,7 @@
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><strong>Soundtrak</strong><i class="material-icons right">close</i></span>
                 <blockquote class="edit">
-                  A film soundtrack community database. The application is designed to curate a comprehensive track list for any film imaginable by tapping into the knowledge of users.  Built by a team of three, Soundtrak queries the OMDB API and provides logged-in users with add/edit authorization for all films. Work on
+                  A film soundtrack community database. The application is designed to curate a comprehensive track list for any film imaginable by tapping into the knowledge of users.  Built by a team of three, Soundtrak queries the OMDB API and provides logged-in users with add/edit authorization for all films. Currently working on implementation of a voting validation system for posted tracks, allowing users to endorse tracks posted by others if the information is correct.
                 </blockquote>
                 <div class="flex">
                   <a class="waves-effect waves-light btn valign" href="https://sound-trak.herokuapp.com/"><i class="small material-icons">pageview</i>&nbsp;Deployed Page</a>
@@ -41,10 +42,10 @@
 
         </div>
         <div class="row">
-          <div class="col s12 m5 push-m1 card-panel fade">
+          <div class="col s12 m5 card-panel fade">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="unleashd.png">
+                <img class="activator responsive-img" src="../css/img/preview/unleashd.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><strong>Unleashd</strong><i class="material-icons right">more_vert</i></span>
@@ -63,10 +64,10 @@
               </div>
             </div>
           </div>
-          <div class="col S12 m5 push-m2 card-panel fade">
+          <div class="col S12 m5 push-m1 card-panel fade">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="vapor.png">
+                <img class="activator responsive-img" src="../css/img/preview/vapor.png">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><strong>Techno-sphere</strong><i class="material-icons right">more_vert</i></span>
@@ -81,8 +82,12 @@
                   Ruby on rails web log built as a personal headspace and canvas for passion projects. Site utilizes MaterializeCSS for styling, Discus comments section, and Google page analytics. First post showcases the build and set-up process for a Raspberry Pi micro-computer. Future subjects will include further learning projects.
                 </blockquote>
                 <div class="flex">
-                  <a class="waves-effect waves-light btn valign" href="https://jrgerv.github.io/techno-sphere/"><i class="small material-icons">pageview</i>Deployed Page</a>
-                  <a class="waves-effect waves-light btn valign" href="https://github.com/JRgerv/techno-sphere"><i class="material-icons">code</i>&nbsp;Github Link</a>
+                  <div class="row">
+                    <div class="s6">
+                      <a class="waves-effect waves-light btn valign" href="https://jrgerv.github.io/techno-sphere/"><i class="small material-icons">pageview</i>Deployed Page</a>
+                    </div class="s6">
+                    <a class="waves-effect waves-light btn valign" href="https://github.com/JRgerv/techno-sphere"><i class="material-icons">code</i>&nbsp;Github Link</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -94,6 +99,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./scripts.js"></script>
+    <script type="text/javascript" src="../scripts.js"></script>
   </body>
 </html>
